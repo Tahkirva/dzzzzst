@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.home-button {
+    display: inline-flex;
+    background-color: #e60026; /* Rouge algérien */
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border: 2px solid #e60026; /* Ajoute une bordure */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #fff;
+    color: #e60026;
+}
+
+.navbar {
+    text-align: left;}
+
+
+.header {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 28px;
+    color: #fff;
+}
+
+.product-details {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.product-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.product-price {
+    font-size: 24px;
+    color: #ff5722;
+    margin-bottom: 20px;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.option {
+    margin-bottom: 20px;
+}
+
+.option-label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.option-select, .option-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.add-to-cart {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.add-to-cart:hover {
+    background-color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+    .product-details {
+        flex-direction: column;
+    }
+
+    .product-image {
+        order: 2;
+        text-align: center;
+    }
+
+    .product-info {
+        order: 1;
+    }
+
+    .product-description {
+        margin-top: 20px;
+    }
+
+    .product-price {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .product-price {
+        font-size: 1.2rem;
+    }
+}
